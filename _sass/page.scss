@@ -40,6 +40,8 @@ body {
 		@include grid(12,1.5);
 		@include prefix(12,2);
 	}
+	text-transform: lowercase;
+	font-weight: 800;
 }
 
 /* Top navigation links */
@@ -371,6 +373,7 @@ $button-size: 1.5rem;
 }
 
 /* Author sidebar */
+
 .article-author-side {
 	display: none;
 	.bio-photo {
@@ -387,6 +390,12 @@ $button-size: 1.5rem;
 		.author-social {
 			display: block;
 			max-width: 125px;
+		}
+		.author-bio-link{
+			color: #cccccc
+		}
+		.author-bio-link:hover{
+			color: blue
 		}
 		h3 {
 			margin-top: 10px;
