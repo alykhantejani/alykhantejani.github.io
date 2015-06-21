@@ -1,25 +1,28 @@
 ---
-layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, responsive]
+layout: about
+title: About me
+tags: [about]
 modified: 2014-08-08T20:53:07.573882-04:00
 comments: true
 image:
-  feature: sample-image-2.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+    feature: sample-image-1.jpg
 ---
+##Past
 
-Minimal Mistakes is responsive Jekyll theme with large featured images and solid typography. As the name implies the styling is fairly minimal to make it easier for you to build on top of.
+I obtained a Masters of Engineering (MEng) in Computer Science (2010) and a Masters of Philosophy (MPhil) in Computer Vision (2014) both from Imperial College, London. In between, I did a 2 year stint as a software engineer at Goldman Sachs.
 
-## Minimal Mistakes is all about:
+My previous research interests were focussed on Random Forests, mostly applied to pose estimation, both for articulated hand pose and for multiple instances of textureless 3D objects. From this, I obtained two top publications at CVPR and ECCV as well as two patents. For more information, see below.
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers. 
-* Minimal embellishments -- content first.
-* Optional large feature images for posts and pages.
-* Simple and clear permalink structure.
-* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
-* Support for Disqus Comments
+####Demos
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+##Present
+Currently, I work as a Senior Research Engineer at Blippar. In this role, I co-wrote the augmented reality tracking engine for mobile devices, currently used by our app. However, in the more recent months I have shifted my focus to deep learning being applied to large-scale visual object recognition (Blippar's visual browser). Our work in this field has been showcased in the press, for example: 
+
+Additionally, it has been demoed on TV stations such as CNBC, Fox News NY and BBC London.
+
+##Future
+...who knows, get in contact with me at info@alykhantejani.com
+
+##Publications
+
+##Patents
