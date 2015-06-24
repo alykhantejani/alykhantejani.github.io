@@ -1,6 +1,151 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="{{ site.url }}/assets/js/scripts.min.js"></script>
+
+<script type="text/javascript" src="{{ site.url }}/assets/js/path-finding/PriorityQueue.js"></script>
+<script type="text/javascript" src="{{ site.url }}/assets/js/path-finding/Cell.js"></script>
+<script type="text/javascript" src="{{ site.url }}/assets/js/path-finding/search.js"></script>
+
+<script>
+jQuery(document).ready(function(){
+  
+var canvas = jQuery("#canvas");
+var m = new Maze(canvas);
+
+m.currentMode = m.MODE.SELECT_START;
+m.startChoosingStartPoint();
+
+onNextActionClick = function(e,m){
+if(m.currentMode == m.MODE.SELECT_START){
+if(m.canvas[0].startX != undefined && m.canvas[0].startY != undefined){
+m.stopChoosingStartPoint();
+showChooseEndPointText();
+m.startChoosingEndPoint();
+m.currentMode = m.MODE.SELECT_END;
+}
+else{
+alert("Please select a starting point");
+}
+}
+else if(m.currentMode == m.MODE.SELECT_END){
+if(m.canvas[0].endX != undefined && m.canvas[0].endY != undefined){
+m.stopChoosingEndPoint();
+showDrawWallsText();
+m.startDrawingWalls();
+m.currentMode = m.MODE.SELECT_WALLS;
+}
+else{
+alert("Please select a end point");
+}
+}
+else{
+m.stopDrawingWalls();
+showSearchOptions(m);
+}
+}
+
+jQuery("#actionNext").click(function(e){
+onNextActionClick(e,m);
+});
+
+showChooseStartPointText = function(){
+var html = "Click a square on the grid to choose a starting point.";
+jQuery("#actionContent").html(html);
+}
+
+showChooseEndPointText = function(){
+var html = "Click a square on the grid to choose a <strong>ending</strong> point.";
+jQuery("#actionContent").html(html);
+}
+
+showDrawWallsText = function(){
+var html = "Click and drag your mouse around to draw some walls.";
+jQuery("#actionContent").html(html);
+}
+
+showSearchOptions = function(maze){
+var html='Choose a search algorithm.'+
+'<form id="button">'+
+'&nbsp;'+
+'<ul>'+
+  '<li><input id="dfs" type="radio" name="searchGroup" value="dfs" />Depth First Search</li>'+
+'</ul>'+
+'<ul>'+
+  '<li><input id="djikstra" type="radio" name="searchGroup" value="djk" />Djikstra\'s Algorithm (BFS)</li>'+
+'</ul>'+
+'<ul>'+
+  '<li><input id="aStar" type="radio" name="searchGroup" value="a*" />A* Search</li>'+
+'</ul>'+
+'&nbsp;'+
+'</form>';
+jQuery("#actionContent").html(html);
+jQuery("#actionNext").remove();
+
+jQuery("#actionButtons").append("<div id='startSearch' class='actionButton'><span>Start Search</span></div>");
+jQuery("#actionButtons").append("<div id='clearSearch' class='actionButton'><span>Clear Seach</span></div>");
+jQuery("#startSearch").click(startSearch);
+jQuery("#clearSearch").click(function(e){
+clearSearch(maze);
+});
+
+}
+
+clearSearch = function(maze){
+var cells_x = maze.canvas.attr("cells_x");
+var cells_y = maze.canvas.attr("cells_y");
+
+for(var x = 0; x < cells_x; x++){
+for(var y = 0; y < cells_y; y++){
+var c = new Cell(x,y);
+if(!(c.hash() in maze.canvas[0].walls) && !(x == maze.startX && y == maze.startY) && !(x == maze.endX && y == maze.endY)){
+fillSquare(x,y,maze.canvas[0], "#ffffff");
+}
+}
+}
+maze.drawGridLines();
+}
+startSearch = function(){
+var selectedVal = jQuery('input[type=radio]:checked', '#button').val();
+if(selectedVal == "a*"){
+var queue = new PriorityQueue();
+var c = new Cell(m.startX,m.startY);
+var visited = {};
+visited[c.hash()]=true;
+var distances = {};
+distances[c.hash()] = 0;
+var occupied = canvas[0].walls;
+var backtrack = {};
+backtrack[c.hash()] = new Cell(-1,-1);
+visitNeighbours(c,m,queue,visited,occupied,distances,aStarHeuristic,backtrack,aStar);
+
+}
+else if(selectedVal == "djk"){
+var queue = new PriorityQueue();
+var c = new Cell(m.startX,m.startY);
+var visited = {};
+visited[c.hash()]=true;
+var distances = {};
+distances[c.hash()] = 0;
+var occupied = canvas[0].walls;
+var backtrack = {};
+backtrack[c.hash()] = new Cell(-1,-1);
+visitNeighbours(c,m,queue,visited,occupied, distances,djikstraHeuristic,backtrack,djikstras);
+}
+else if(selectedVal == "dfs"){
+var stack = new Array();
+var c = new Cell(m.startX,m.startY);
+var visited = {};
+visited[c.hash()]=true;
+var occupied = canvas[0].walls;
+var backtrack = {};
+backtrack[c.hash()] = new Cell(-1,-1);
+visitNeighboursDFS(c,m,stack,visited, occupied,backtrack,dfs);
+}
+}
+});
+
+</script>
+
 {% if site.owner.google.analytics %}
 <!-- Asynchronous Google Analytics snippet -->
 <script>
