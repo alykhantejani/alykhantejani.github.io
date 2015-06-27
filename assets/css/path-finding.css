@@ -1,0 +1,47 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 0:34:53 May 11, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:40:28 Jun 24, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+	#pathFindingContent{
+		margin-top:20px;
+	}
+	#canvas{
+		border:1px solid grey;
+	}
+	#buttonList{
+		margin-top:0px;
+		padding-left:3px;
+		list-style:none;
+	}
+	#buttonList li{
+		margin-bottom:5px;
+	}
+	#actionFieldset{
+		border:none;
+	}
+	#actionButtons{
+		float:right;
+		margin-right:35px;
+	}
+	#actionContent p{
+		font-size:1.0em !important;
+	}
+	.actionButton{
+		bottom:0px;
+		padding-right:10px;
+		float:right;
+		font-weight:bold;
+	}
+	.actionButton span:hover{
+		color:orange;
+		cursor:pointer;
+	}

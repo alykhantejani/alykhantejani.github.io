@@ -1,0 +1,100 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+{% include _path_finding_head.html %}
+</head>
+
+<body class="post">
+
+{% include _browser-upgrade.html %}
+
+{% include _navigation.html %}
+
+{% if page.image.feature %}
+  <div class="image-wrap">
+  <img src=
+    {% if page.image.feature contains 'http' %}
+      "{{ page.image.feature }}"
+    {% else %}
+      "{{ site.url }}/images/{{ page.image.feature }}"
+    {% endif %}>
+  </div><!-- /.image-wrap -->
+{% endif %}
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    {% include _author-bio.html %}
+  </div>
+  <article class="post">
+    <div class="headline-wrap">
+      {% if page.link %}
+        <h1><a href="{{ page.link }}">{{ page.title }}</a></h1>
+      {% else %}
+        <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
+      {% endif %}
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      HTML5 has been gaining a lot of attention since Steve Jobs' '<a title="Thoughts On Flash" href="/web/20130501065142/http://www.apxple.com/hotnews/thoughts-on-flash/" target="_blank">Thoughts On Flash</a>'. Even though its not fully complete/supported by all browsers, I've been meaning to check out some of the features for a while. I finally got round to playing with canvas, which is supported in most major browsers.
+      <br />
+      <br />
+      I decided to implement some path finding algorithms to show the shortest path to a goal given a maze of obstacles in the way. Below is a video of it in action:
+      <br />
+      <br />
+      <center>
+        <iframe src="http://www.youtube.com/embed/VacmCCHycA4" frameborder="0" width="420" height="345"></iframe>
+      </center>
+      <br />
+      <br />
+      The demonstration without obstacles really shows how A* with a good heuristic (this one uses the straight line distance from the cell to the goal cell) can drastically cut down the search space. If you have a supported browser you can try it out below:
+      <br />
+      <br />
+      Click a square on the grid to choose a starting point.
+      <br />
+      <div id="pathFindingContent"><center>
+        <canvas id="canvas" width="300" height="300"></canvas></center></div>
+          <fieldset id="actionFieldset">
+            <div id="actionContent">
+              
+            </div></fieldset>
+            <center>
+          <div id="actionButtons">
+          <div id="actionNext" class="actionButton"><span>Next...</span></div>
+        </div>
+        </center>&nbsp;
+      <hr />
+      <footer role="contentinfo">
+        {% if page.share != false %}{% include _social-share.html %}{% endif %}
+        <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  {% if site.owner.disqus-shortname and page.comments == true %}
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+  {% endif %}
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  {% if site.related_posts.size > 0 %}
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="{{ site.url }}/posts/">View all posts</a>)</small></h4>
+    <ul>
+    {% for post in site.related_posts limit:3 %}
+      <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  {% endif %}
+  <footer>
+    {% include _footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include _scripts.html %}         
+
+</body>
+</html>
