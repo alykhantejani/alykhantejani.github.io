@@ -101,5 +101,73 @@ Even though it is unlikely that just one split function will be able to partitio
 More formally, information gain is defined as the change in entropy ($$H$$) from a prior state (the training data at the node, $$S$$) to a new state (the subsets generated, $$S_i$$). This is denoted by the following formula (in this case we are using the Shannon Entropy as our measure):
 <br />
 <br />
-<b>note:</b> $$C$$ is the set of all classes, in our example this is $$\{yes,no\}$$. 
+<b>note:</b> $$C$$ is the set of all classes, in our example this is $$\{yes,no\}$$.
+<br />
+<br />
+<center>
+$$
+IG(S) = H(S) - \sum\limits_{i} w_i \times H(S_i)
+\\where:
+\\H(S) = - \sum\limits_{c \in C}{P(c|S) \times log_2(P(c|S))}\\w_i = \frac{|S_i|}{|S|}
+$$
+</center>
+<br />
+So, at each node we wish to choose the function that maximizes the information gain. Now, returning to decision tree learning, the following algorithm, called <a href="https://en.wikipedia.org/wiki/C4.5_algorithm">C4.5</a>, is used to grow our tree:
 
+1. If we should terminate, create leaf node. Else
+2. For each attribute a
+3. Find the normalized information gain from splitting on a
+4. Let a_best be the attribute with the highest information gain
+5. Create a decision node that splits on a_best
+6. Recurse on the subsets obtained by splitting on a_best, and add those nodes as children of the current node
+
+Returning to our example, for our terminating criterion we will stop if all data samples at the node have the same class, which is all yes or all no in our case. So given the training data, we start at the root of the tree and check, for each attribute, the information gain. For example, given the 3 data examples at the top, using the attribute $$wind$$ , we calculate the information gain as follows:
+<br />
+<br />
+First, we calculate the entropy, $$H(S)$$ , of the whole set $$S=\{d1,d2,d3\}$$ as follows:
+<br />
+<center>
+$$
+H(S) = - \sum\limits_{c\in\{yes,no\}}P(c|S) \times log_2\left(P\left(c|S\right)\right)
+$$
+$$
+H(S) = -\left(\frac{1}{3} \times log_2\left(\frac{1}{3}\right) + \frac{2}{3} \times log_2\left(\frac{2}{3}\right)\right)
+$$
+$$
+H(S) = 0.91829583405
+$$
+</center>
+Split the data into two sets based on the possible values the attribute $$wind$$ can take ($$\{weak,strong\}$$). This produces the following sets $$S_1 = \{d1,d3\}  \&  S_2 = \{d2\}$$ , where $$S_1$$ has $$wind = weak$$ and $$S_2$$ has $$wind = strong$$.
+<br/>
+<br />
+<center>
+    $$
+    H(S_1) = -\left(0 + \frac{2}{2} \times log_2\left(\frac{2}{2}\right)\right) = 0
+    $$
+</center>
+and $$w_1 = \frac{2}{3}$$ as $$S_1$$ contains two of the three training datum.
+<center>
+    $$
+    H(S_2) = -\left(\frac{1}{1} \times log_2\left(\frac{1}{1}\right)\right) = 0
+    $$
+</center>
+and $$w_2 = \frac{1}{3}$$.
+<br />
+<br />
+So the information gain ($$IG$$) is:
+<center>
+$$
+IG(S) = H(S) -\sum\limits_{i=\{1,2\}}w_i \times H(S_i)\\
+IG(S) = 0.91829583405 - (0 + 0) = 0.91829583405
+$$
+</center>
+Similarly, we check for the attributes $$weathercondition$$, $$temperature$$ and $$humidity$$, which give us information gains of $$-0.08170416595$$, $$-0.08170416595$$ and $$-0.08170416595$$ respectively. As we are trying to maximize information gain, we choose wind as the best attribute and split the data on this attribute.
+<br />
+<br />
+We now recurse on the two subsets produced ($$S_1$$ & $$S_2$$ as above), which we can see both contain data from just one class which matches our termination criterion. So, we have now how two leaf nodes, and have built our tree.
+<br />
+<br />
+Given our tree, given a new input $$x$$, we check the $$wind$$ attribute and if it is $$weak$$ we answer $$no$$ else if it is $$strong$$ we answer $$yes$$. Obviously this was highly simplified by the fact that we only used 3 training samples, which is hardly enough to capture the problem accurately. Nevertheless, I hope this example has made the algorithm clear.
+<br />
+<br />
+In the second part of this post I will discuss the down side of using this approach and why we use random trees. Additionally (hopefully) I will have a walk through, with code, of a real application using random forests. The application will probably be some form of image classification, such as classifying images as either images of cats or dogs, or if I have the time perhaps I can try and tackle a where’s Wally solver.
