@@ -6,7 +6,6 @@ tags: []
 modified: 2013-03-02
 comments: true
 ---
-
 It’s been a while since I’ve blogged, especially about anything computer science related, so here goes.
 <br />
 <br />
