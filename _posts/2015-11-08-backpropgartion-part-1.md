@@ -27,6 +27,8 @@ We want to fit a straight line to this data, recall that the function for a stra
 $$
 f(x) = mx + b
 $$
+
+
 So given the data above, we are trying to find the coefficients $m$ and $b$ that best represent our data. To measure how well an estimate of $m$ and $b$ represent our data, we must define an error function over these coefficients, $E\left(m,b\right)$. In this example, we will use the average <em>sum of squared differences</em> for our error function, which essentially squares the error between the predicted value ($mx_i + b$) and the actual value ($y_i$), for each of the $N$ data points, $(y_i, x_i)$, in our dataset. More formally, $E(m,b)$ is defined as:
 <center>
 	$$
@@ -76,27 +78,36 @@ Now all we need to do is determine the learning rate to use (which is the topic 
 <br />
 <br />
 
-Let's take another example, this time our dataset is drawn from the function $sin(x)$ with some random jitter applied, as shown below. We will use gradient descent to try and fit a high degree polynomial to the data below.
-<center><img src="{{ site.url }}/images/sin_x.png" style='width:85%' alt="Data points (y, x)"/></center>
+Let's take another example, this time our dataset is drawn from the function $y_i = -4 + 3x +4x^2 + 4x^3$, with some jitter of $\pm 5$ applied, as shown below.
+
+<center><img src = "{{ site.url }}/images/data_points_example_2.png" style='width:85%' alt="Data points (y, x)" /></center>
 <center><em>Our dataset of points</em></center>
-We know that using the Taylor expansion, we can represent $sin(x)$ with a $kth$ degree polynomial. For example, the $5th$ degree Taylor expansion of $sin(x)$ is $x - \frac{x^4}{6} + \frac{x^5}{120}$. So, if we try to fit a $5th$ degree polynimial to our data above, let's see if gradient descent can find the same (or very similar) coefficients, i.e. we are trying to represent our data above with the following function:
+<br />
+<br />
+This function is a $3^{rd}$ degree polynomial, so we will try to use gradient descent to fit a function of the form shown below to the data. 
 
 $$
-f(x) = a + bx + cx^2 + dx^3 + ex^4 + fx^5
+f(x) = a + bx + cx^2 + dx^3
 $$
 
-Where $a...f$ are the coefficients we want to predict. Therefore, given our $N$ data points, $(y_i, x_i), our error function over these coefficients is defined as:
+Where $a...d$ are the coefficients we want to predict. Therefore, given our $N$ data points, $(y_i, x_i), our error function over these coefficients is defined as:
 
 $$
-E\left(a,b,c,d,e,f\right) = \frac{1}{N} \sum_{i=1}^{N}\big(y_i - f(x_i)\big)^2
+E\left(a,b,c,d\right) = \frac{1}{N} \sum_{i=1}^{N}\big(y_i - f(x_i)\big)^2
 $$
 
-Unfortunately, as the error is defined over 6 variables, we cannot visualize the 7-dimensional error surface. All that remains, is to define the partial derivatives $\frac{\partial E}{a}...\frac{\partial E}{f}$, which are:
+Unfortunately, as the error is defined over 4 variables, we cannot visualize the 4-dimensional error surface. All that remains, is to define the partial derivatives $\frac{\partial E}{a}...\frac{\partial E}{d}$, which are:
 
 $$
 \frac{\partial E}{a} = -\frac{2}{N}\sum_1^{N} \big(y_i - f(x_i)\big) \qquad \frac{\partial E}{b} = -\frac{2}{N}\sum_1^{N} x_i\big(y_i - f(x_i)\big) \\
-\frac{\partial E}{c} = -\frac{2}{N}\sum_1^{N} x_i^2\big(y_i - f(x_i)\big) \qquad \frac{\partial E}{d} = -\frac{2}{N}\sum_1^{N} x_i^3\big(y_i - f(x_i)\big)\\
-\frac{\partial E}{e} = -\frac{2}{N}\sum_1^{N} x_i^4\big(y_i - f(x_i)\big) \qquad \frac{\partial E}{f} = -\frac{2}{N}\sum_1^{N} x_i^5\big(y_i - f(x_i)\big)\\
-
+\frac{\partial E}{c} = -\frac{2}{N}\sum_1^{N} x_i^2\big(y_i - f(x_i)\big) \qquad \frac{\partial E}{d} = -\frac{2}{N}\sum_1^{N} x_i^3\big(y_i - f(x_i)\big)
 $$
 
+Finally, below are the results of $100$ steps of gradient descent with a learning rate of $0.03$, starting from the point $(0, 0, 0, 0)$ in the error space.
+<br />
+<center><img src = "{{ site.url }}/images/gradient_descent_example_2.gif" style='width:85%' alt="100 steps of gradient descent with a learning rate of 0.03" /></center>
+<center><em>100 steps of gradient descent with a learning rate of 0.3</em></center>
+<br />
+<br />
+
+If you want to re-produce the results from above, you can find the code used for this on my github <a href ='https://github.com/alykhantejani/gradient_descent_blog'>here</a>.
