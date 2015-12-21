@@ -17,7 +17,7 @@ It's conferences season again, and this time I had the pleasure of attending the
 
 <br />
 
-Conferences are a great way to re-connect with old friends and possibly make some new ones whilst spending a week together discussing ideas from all aspects of computer vision and machine learning. Below are some of my highlights from the trip, as well as (in my own oppinion) some of the stand-out papers to read.
+Conferences are a great way to re-connect with old friends and possibly make some new ones whilst spending a week together discussing ideas from all aspects of computer vision and machine learning. Below are some of my highlights from the trip, as well as (in my own opinion) some of the stand-out papers to read.
 
 <br />
 
