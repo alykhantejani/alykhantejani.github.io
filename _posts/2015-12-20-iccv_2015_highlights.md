@@ -33,11 +33,11 @@ There were also some very good demos this year, a few of my favourite were:
 </li>
 <li style="padding-bottom:7px;">Showcasing SegNet: A Deep Encoder-Decoder Architecture for Real-Time Road Scene Segmentation
 	<br />
-	<a href="http://arxiv.org/pdf/1511.00561v2.pdf">[PDF]</a><a href="http://mi.eng.cam.ac.uk/projects/segnet/">[Demo]</a>
+	<a href="http://arxiv.org/pdf/1511.00561v2.pdf">[PDF]</a> <a href="http://mi.eng.cam.ac.uk/projects/segnet/">[Demo]</a>
 </li>
 <li style="padding-bottom:7px;">(A shameless self plug) In the workshop on <em>Recovering 6D Object Pose</em> there was a demo of my <a href='http://www.iis.ee.ic.ac.uk/icvl/doc/ECCV2014_aly.pdf'>previous work on 3D object pose estimation</a> which was estimating object pose in the bin-picking scenario, running at a reasonable frame-rate on a laptop.
 	<br />
-	<a href="http://www.iis.ee.ic.ac.uk/icvl/doc/ECCV2014_aly.pdf">[PDF]</a><a href = "https://www.youtube.com/watch?v=dh2VtnnsGuY">[YouTube]</a><a href="http://www.iis.ee.ic.ac.uk/ComputerVision/3DPose-2015.html">[Workshop Challenges]</a>
+	<a href="http://www.iis.ee.ic.ac.uk/icvl/doc/ECCV2014_aly.pdf">[PDF]</a> <a href = "https://www.youtube.com/watch?v=dh2VtnnsGuY">[YouTube]</a> <a href="http://www.iis.ee.ic.ac.uk/ComputerVision/3DPose-2015.html">[Workshop Challenges]</a>
 </li>
 </ol>
 
