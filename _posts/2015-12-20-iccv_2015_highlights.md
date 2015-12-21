@@ -3,7 +3,7 @@ layout: post
 title: "Highlights of ICCV 2015"
 excerpt: "A short summary of ICCV 2015 and my personal highlights"
 tags: [Computer Vision, Machine Learning, Conferences, ICCV]
-modified: 2015-11-20
+modified: 2015-11-21
 comments: true
 ---
 It's conferences season again, and this time I had the pleasure of attending the International Conference on Computer Vision (ICCV) in Santiago, Chile. I couldn't have picked a better destination myself, it was very surreal to experience 30 degree heat in the middle of winter, whilst still being able to see snowy-topped mountains in the distance.
