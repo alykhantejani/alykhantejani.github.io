@@ -9,7 +9,7 @@ comments: true
 It's conferences season again, and this time I had the pleasure of attending the International Conference on Computer Vision (ICCV) in Santiago, Chile. I couldn't have picked a better destination myself, it was very surreal to experience 30 degree heat in the middle of winter, whilst still being able to see snowy-topped mountains in the distance.
 <center>
 	<img src = "{{ site.url }}/images/iccv_highlights/santiago.png" width="240px" /></td>
-	<img src = "{{ site.url }}/images/iccv_highlights/Image-2.jpeg" width="240px;" style="vertical-align:bottom !important;" /></td>
+	<img src = "{{ site.url }}/images/iccv_highlights/santiago_2.jpeg" width="240px;" style="vertical-align:bottom !important;" /></td>
 	<br />
 	<br />
 	<em>Santiago, Chile</em>
