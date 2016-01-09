@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Backpropogation Part I: Gradient Descent"
-excerpt: "An introduction to gradient descent and a few toy examples. This post serves as a prelude to my next post on deriving the backpropogation equations"
-tags: [DeepLearning, NueralNetworks, MachineLearning, Backpropogation, Calculus]
+title: "Backpropagation Part I: Gradient Descent"
+excerpt: "An introduction to gradient descent and a few toy examples. This post serves as a prelude to my next post on deriving the backpropagation equations"
+tags: [DeepLearning, NueralNetworks, MachineLearning, Backpropagation, Calculus]
 modified: 2015-11-08
 comments: true
 ---
@@ -10,11 +10,11 @@ Like most folks in the computer vision and machine learning community, I've rece
 
 <br />
 
-During my quest to learn about deep learning, I found a lot of resources online describing how neural networks work at a high level, and even how to apply them to many problems. However, very few described how the learning occurs in detail and in particular very few went into depth of the back-propogation algorithm, it's extensions to convolutional neural networks (the most popular flavour) and how to check whether your computation of gradients is correct when coding this. The goal of this blog post is mostly to to act as a notebook for myself, for when I need a refresher on the derivation of backpropogation equations, but also to (hopefully) help anyone else who is trying to understand this (via google's wonderful indexing :)).
+During my quest to learn about deep learning, I found a lot of resources online describing how neural networks work at a high level, and even how to apply them to many problems. However, very few described how the learning occurs in detail and in particular very few went into depth of the back-propagation algorithm, it's extensions to convolutional neural networks (the most popular flavour) and how to check whether your computation of gradients is correct when coding this. The goal of this blog post is mostly to to act as a notebook for myself, for when I need a refresher on the derivation of backpropagation equations, but also to (hopefully) help anyone else who is trying to understand this (via google's wonderful indexing :)).
 
 <br />
 
-Before we discuss backpropogation, we have to discuss <i>gradient descent</i>. Gradient descent is an optimization algorithm used to find a local (or the global if you're lucky!) minimum of a function. In terms of machine learning, if we can express the goal of our algorithm with a <em>error</em> function (sometimes called a <em>cost</em> function), $E(x)$, then the global minimum of this function will give us the point of minimal error, which is exactly what we want our algorithm to achieve! 
+Before we discuss backpropagation, we have to discuss <i>gradient descent</i>. Gradient descent is an optimization algorithm used to find a local (or the global if you're lucky!) minimum of a function. In terms of machine learning, if we can express the goal of our algorithm with a <em>error</em> function (sometimes called a <em>cost</em> function), $E(x)$, then the global minimum of this function will give us the point of minimal error, which is exactly what we want our algorithm to achieve! 
 
 <br />
 
