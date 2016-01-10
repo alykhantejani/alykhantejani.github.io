@@ -43,7 +43,7 @@ As our error function is only defined over 2 variables, we can visualize it for 
 <em>The error surface of predictions, given our data</em>
 </center>
 <br />
-The goal of gradient descent is to start on a random point on this error surface $(m_0, b_0)$ and find the minimum point $\left(m^{\ast}, b^{\ast}\right)$. Recall that the gradient at a point is the vector of parital derivates $\left(\frac{\partial E}{m}, \frac{\partial E}{b}\right)$, where the direction represents the <em>greatest rate of increase</em> of the function. Therefore, starting at a point on the surface, to move towards the minimum we should move in the <em>negative direction</em> of the gradient at that point. This is precisely what gradient descent does. More formally, gradient descent is an iterative algorithm described by the following steps:
+The goal of gradient descent is to start on a random point on this error surface $(m_0, b_0)$ and find the global minimum point $\left(m^{\ast}, b^{\ast}\right)$. Recall that the gradient at a point is the vector of parital derivates $\left(\frac{\partial E}{m}, \frac{\partial E}{b}\right)$, where the direction represents the <em>greatest rate of increase</em> of the function. Therefore, starting at a point on the surface, to move towards the minimum we should move in the <em>negative direction</em> of the gradient at that point. This is precisely what gradient descent does. More formally, gradient descent is an iterative algorithm described by the following steps:
 <ol>
 	<li>Use estimates of parameters $(m_j, b_j)$ to calculate the error $E(m_j, b_j)$</li>
 	<li>Calculate the partial derivatives $\frac{\partial E}{m_j}$ and $\frac{\partial E}{b_j}$</li>
@@ -110,4 +110,6 @@ Finally, below are the results of $100$ steps of gradient descent with a learnin
 <br />
 <br />
 
-If you want to re-produce the results from above, you can find the code used for this on my github <a href ='https://github.com/alykhantejani/gradient_descent_blog'>here</a>.
+While its encouraging to see that we are obtaining good results using the gradient descent technique, there is something that we have glossed over. If your error surface is convex and with an appropriate learning rate (i.e. not too high), then convergence to the global minima is guaranteed. However, in many real-world problems, the error surface is generally highly non-convex, meaning there are a plethora of local minima. In this situation, depending on the initial parameters we choose, the solution could converge to a local minima that is not neccesarilly the global minima. Whilst this non-convexity is typical of many real-world problems, don't let that discourage you. In fact, gradient descent is still used in practice, and is the most popular technique used in training deep neural networks, they just use with a few tricks such as <a href='http://jmlr.org/proceedings/papers/v9/glorot10a/glorot10a.pdf'>smart initialization of parameters</a> and <a href = 'http://jmlr.org/proceedings/papers/v28/sutskever13.pdf'>momentum</a> to name a few. Hopefully, I will cover these in a later post.
+
+Finally, If you want to re-produce the results from above, you can find the code used for this on my github <a href ='https://github.com/alykhantejani/gradient_descent_blog'>here</a>.
