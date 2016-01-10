@@ -3,7 +3,7 @@ layout: post
 title: "Backpropagation Part I: Gradient Descent"
 excerpt: "An introduction to gradient descent and a few toy examples. This post serves as a prelude to my next post on deriving the backpropagation equations"
 tags: [DeepLearning, NueralNetworks, MachineLearning, Backpropagation, Calculus]
-modified: 2015-11-08
+modified: 2016-10-01
 comments: true
 ---
 Like most folks in the computer vision and machine learning community, I've recently been using deep neural networks in my research. Deep learning has attracted huge amounts of interest recently as they have managed to achieve state-of-the-art results in many sub-domians of computer vision such as classification, localisation, segmentation and action recognition to name a few. Most notably, deep learning has recently been able to <a href = 'http://arxiv.org/pdf/1502.01852v1.pdf'>surpass human level performance</a> on the incredibbly difficult <a href = 'http://image-net.org/'>ImageNet challenge</a>. The beautiful thing about deep learning, is that these systems learn purely from the data, so called <i>end-to-end</i> learning.
