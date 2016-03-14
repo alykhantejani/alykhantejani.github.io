@@ -9,7 +9,7 @@ image:
 ---
 ##Past
 
-I obtained a Masters of Engineering (MEng) in Computer Science (2010) and a Masters of Philosophy (MPhil) in Computer Vision & Machine Learning (2014) both from Imperial College, London. In between these, I worked as a software engineer at Goldman Sachs for 2 years.
+I obtained a Masters of Engineering (MEng) in Computer Science (2010) and a Masters of Philosophy (MPhil) in Computer Vision & Machine Learning (2014) both from Imperial College, London. In between these, I worked as a  software engineer at Goldman Sachs for 2 years.  
 <br />
 My previous research interests were focussed on Random Forests, mostly applied to pose estimation, both for articulated hand pose and for multiple instances of textureless 3D objects. From this, I obtained two top publications at CVPR and ECCV as well as two patents. For more information, see below.
 
