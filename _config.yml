@@ -8,7 +8,7 @@ url:
 # Jekyll configuration
 
 permalink:   /:categories/:title/
-markdown:    kramdown
+markdown: kramdown
 highlighter: pygments
 sass:
   sass_dir: _sass

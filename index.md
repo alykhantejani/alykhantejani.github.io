@@ -7,7 +7,7 @@ comments: true
 image:
     feature: sample-image-1.jpg
 ---
-##Past
+## Past
 
 I obtained a Masters of Engineering (MEng) in Computer Science (2010) and a Masters of Philosophy (MPhil) in Computer Vision & Machine Learning (2014) both from Imperial College, London. In between these, I worked as a  software engineer at Goldman Sachs for 2 years.  
 <br />
