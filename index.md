@@ -11,7 +11,7 @@ image:
 
 I obtained a Masters of Engineering (MEng) in Computer Science (2010) and a Masters of Philosophy (MPhil) in Computer Vision & Machine Learning (2014) both from Imperial College, London. In between these, I worked as a  software engineer at Goldman Sachs for 2 years.  
 <br />
-My previous research interests were focussed on Random Forests, mostly applied to pose estimation, both for articulated hand pose and for multiple instances of textureless 3D objects. From this, I obtained two top publications at CVPR and ECCV as well as two patents. For more information, see below.
+My previous research interests were focussed on Random Forests, mostly applied to pose estimation, both for articulated hand pose and for multiple instances of textureless 3D objects. This research resulted in two conference publications (CVPR and ECCV) and two journal submissions (under review for PAMI) as well as two filed patents. For more information, see below.
 
 ## Present
 Currently, I am the UK Lead Research Engineer at Blippar. In this role, I co-wrote the augmented reality tracking engine for mobile devices, currently used by our app. However, in the more recent months I have shifted my focus to deep learning being applied to large-scale visual object recognition (Blippar's visual browser). Our work in this field has been showcased in many major news outlets such as <a href="http://www.dailymail.co.uk/sciencetech/article-2993742/Forget-words-Blippar-app-lets-search-web-using-smartphone-CAMERA.html">The Daily Mail</a>, <a href="http://www.telegraph.co.uk/technology/news/11473374/Blippar-develops-visual-browser-for-the-physical-world.html"> The Telegraph</a> and <a href="http://www.wsj.com/video/a-search-engine-powered-by-your-smartphone-camera/65D77C0F-C710-47AD-919C-0D0E3FF95CF3.html">The Wall Street Journal</a>.  Additionally, it has been demoed on major TV stations such as <a href="http://www.bloomberg.com/news/videos/2015-03-18/-blipp-it-augmented-reality-comes-to-advertising?utm_content=buffer08438&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer">Bloomberg</a> <a href="http://video.cnbc.com/gallery/?video=3000377421">CNBC</a>, <a href="http://www.myfoxny.com/story/29057765/what-does-blippar-app-do">Fox News NY</a> and <a href="https://www.youtube.com/watch?v=FhZAxBR6lko">BBC London News</a>.
@@ -23,7 +23,7 @@ Currently, I am the UK Lead Research Engineer at Blippar. In this role, I co-wro
 <img align="left" src="{{ site.url }}/images/eccv14.png" height="120px" width="120px" style="padding-right: 10px">
 **A. Tejani**, D. Tang, R. Kouskouridas, T-K. Kim  
 **Latent-Class Hough Forests for 3D Object Detection and Pose Estimation** _Proc. of European Conference on Computer Vision (**ECCV**), Zurich, Switzerland, 2014_.  
-<a href="http://www.iis.ee.ic.ac.uk/icvl/doc/ECCV2014_aly.pdf">[PDF]</a><a href="https://www.youtube.com/watch?v=vuDQzgQraFE">[Demo on YouTube]</a>
+<a href="http://www.iis.ee.ic.ac.uk/icvl/doc/ECCV2014_aly.pdf">[PDF]</a><a href="https://www.youtube.com/watch?v=vuDQzgQraFE">[Demo on YouTube]</a><a href="http://www.iis.ee.ic.ac.uk/rkouskou/research/LCHF.html">[Project Page]</a>
   
 <br />
 <br />
@@ -31,6 +31,14 @@ Currently, I am the UK Lead Research Engineer at Blippar. In this role, I co-wro
 D. Tang, **A. Tejani**\*, H.J. Chang\*, T-K. Kim  
 **Latent Regression Forest: Structured Estimation of 3D Hand Posture** _Proc. of IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), Columbus, Ohio, USA, 2014_. \*indicates equal contribution  
 <a href="http://www.iis.ee.ic.ac.uk/dtang/cvpr_14.pdf">[PDF]</a><a href="http://youtu.be/ZI_XNPI_QXA">[Demo on YouTube]</a>
+
+<br />
+<br />
+<img align="left" src="{{ site.url }}/images/6DOF_pami_img1.png" height="120px" width="120px" style="padding-right: 10px; padding-top: 13px">
+**A. Tejani**\*, R. Kouskouridas\*, A. Doumanoglou, D. Tang, T-K. Kim  
+**Latent-Class Hough Forests for 6 DoF Object Pose Estimation** _Under review for IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI)._  \*indicates equal contribution  
+<a style="padding-left: 128px" href="http://arxiv.org/abs/1602.01464">[PDF]</a><a href="http://www.iis.ee.ic.ac.uk/rkouskou/research/LCHF.html">[Project Page]</a>
+
 
 ## Patents
 **U.S. [61/831,255]**: <a href="https://www.google.com/patents/US20140363076">Estimator Training Method and Pose Estimating Method Using Depth Image</a>  
