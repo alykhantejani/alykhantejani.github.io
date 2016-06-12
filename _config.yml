@@ -28,7 +28,7 @@ kramdown:
 owner:
   name: Alykhan Tejani
   avatar: bio-photo.jpg
-  bio: "Hi! My name is Aly. I am currently the UK lead Research Engineer for <a class='author-bio-link' href='http://www.blippar.com'>Blippar</a>. Prior to this I was doing computer vision research at <a class='author-bio-link' href = 'http://www.iis.ee.ic.ac.uk/ComputerVision/index.html'> Imperial College</a> and before this, a software engineer at Goldman Sachs. So in short, I'm a geek. Check out the <a class='author-bio-link' href = '/about'>about</a> page for more information."
+  bio: "Hi! My name is Aly. I am currently the UK lead Research Engineer for <a class='author-bio-link' href='http://www.blippar.com'>Blippar</a>. Prior to this I was doing computer vision research at <a class='author-bio-link' href = 'http://www.iis.ee.ic.ac.uk/ComputerVision/index.html'> Imperial College</a> and before this, a software engineer at Goldman Sachs. So in short, I'm a geek. Check out the <a class='author-bio-link' href = '/'>about</a> page for more information."
   email: 
   disqus-shortname: 
   twitter: alykhantejani
