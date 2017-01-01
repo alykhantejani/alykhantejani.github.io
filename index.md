@@ -28,8 +28,11 @@ Currently I work as a Research Engineer for <a href="https://twitter.com">Twitte
 
 ## Publications
 <br />
+
 ###Conference
 
+
+done
 C. Ledig, L. Theis, F. Huszár, J. Caballero, A. Cunningham, A. Acosta, A. Aitken, **A. Tejani**, J. Totz, Z. Wang, W. Shi
 <br />
 **Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network**
@@ -61,6 +64,8 @@ _Proc. of IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), 2014_.
 
 ###Journal
 
+
+done
 <!--<img align="left" src="{{ site.url }}/images/6DOF_pami_img1.png" height="180px" width="120px" style="padding-right: 10px;">-->
 R. Kouskouridas\*, **A. Tejani**\*, A. Doumanoglou, D. Tang, T-K. Kim
 <br />
