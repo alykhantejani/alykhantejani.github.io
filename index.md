@@ -22,17 +22,15 @@ After this I went on to work at a augmented reality and visual search startup ca
 
 Currently I work as a Research Engineer for <a href="https://twitter.com">Twitter</a>, focussed on computer vision applications using deep learning. My research interests are currently around using computer vision for lower-level vision tasks such as super resolution and artifact removal, with possible applications to image/video compression and enhancement.
 <br />
+
 ## Future
 
 ...who knows, get in contact with me at alykhan[dot]tejani[at]gmail[dot]com
 
 ## Publications
-<br />
 
-###Conference
+##Conference
 
-
-done
 C. Ledig, L. Theis, F. Huszár, J. Caballero, A. Cunningham, A. Acosta, A. Aitken, **A. Tejani**, J. Totz, Z. Wang, W. Shi
 <br />
 **Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network**
@@ -60,12 +58,9 @@ _Proc. of IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), 2014_.
 **\*indicates equal contribution**  
 <a href="http://www.iis.ee.ic.ac.uk/dtang/cvpr_14.pdf">[PDF]</a><a href="http://youtu.be/ZI_XNPI_QXA">[Demo on YouTube]</a>
 <br />
-<br />
 
-###Journal
+##Journal
 
-
-done
 <!--<img align="left" src="{{ site.url }}/images/6DOF_pami_img1.png" height="180px" width="120px" style="padding-right: 10px;">-->
 R. Kouskouridas\*, **A. Tejani**\*, A. Doumanoglou, D. Tang, T-K. Kim
 <br />
