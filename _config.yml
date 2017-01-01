@@ -2,7 +2,8 @@
 
 title:            alykhantejani.com
 locale:           en_US
-url:
+url:              https://alykhantejani.github.io
+baseurl:          ""
 
 
 # Jekyll configuration
