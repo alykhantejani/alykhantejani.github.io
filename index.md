@@ -18,7 +18,7 @@ My previous research interests were focussed on Random Forests, mostly applied t
 After this I went on to work at a augmented reality and visual search startup called <a href="https://blippar.com/en/">Blippar</a>. In this role, I co-wrote the augmented reality tracking engine used on mobile devices (for 2D planar tracking) as well as worked on applying deep learning to large-scale visual object recognition (Blippar's visual browser). Our work in this field has been showcased in many major news outlets such as <a href="http://www.dailymail.co.uk/sciencetech/article-2993742/Forget-words-Blippar-app-lets-search-web-using-smartphone-CAMERA.html">The Daily Mail</a>, <a href="http://www.telegraph.co.uk/technology/news/11473374/Blippar-develops-visual-browser-for-the-physical-world.html"> The Telegraph</a> and <a href="http://www.wsj.com/video/a-search-engine-powered-by-your-smartphone-camera/65D77C0F-C710-47AD-919C-0D0E3FF95CF3.html">The Wall Street Journal</a>.  Additionally, it has been demoed on major TV stations such as <a href="http://www.bloomberg.com/news/videos/2015-03-18/-blipp-it-augmented-reality-comes-to-advertising?utm_content=buffer08438&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer">Bloomberg</a> <a href="http://video.cnbc.com/gallery/?video=3000377421">CNBC</a>, <a href="http://www.myfoxny.com/story/29057765/what-does-blippar-app-do">Fox News NY</a> and <a href="https://www.youtube.com/watch?v=FhZAxBR6lko">BBC London News</a>.
 <br />
 
-##Present
+<h2 id="present">Present</h2>
 
 Currently I work as a Research Engineer for <a href="https://twitter.com">Twitter</a>, focussed on computer vision applications using deep learning. My research interests are currently around using computer vision for lower-level vision tasks such as super resolution and artifact removal, with possible applications to image/video compression and enhancement.
 <br />
@@ -29,7 +29,7 @@ Currently I work as a Research Engineer for <a href="https://twitter.com">Twitte
 
 ## Publications
 
-##Conference
+<h3 id="present">Conference</h2>
 
 C. Ledig, L. Theis, F. Huszár, J. Caballero, A. Cunningham, A. Acosta, A. Aitken, **A. Tejani**, J. Totz, Z. Wang, W. Shi
 <br />
@@ -59,7 +59,7 @@ _Proc. of IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), 2014_.
 <a href="http://www.iis.ee.ic.ac.uk/dtang/cvpr_14.pdf">[PDF]</a><a href="http://youtu.be/ZI_XNPI_QXA">[Demo on YouTube]</a>
 <br />
 
-##Journal
+<h3 id="present">Journal</h2>
 
 <!--<img align="left" src="{{ site.url }}/images/6DOF_pami_img1.png" height="180px" width="120px" style="padding-right: 10px;">-->
 R. Kouskouridas\*, **A. Tejani**\*, A. Doumanoglou, D. Tang, T-K. Kim
