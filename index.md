@@ -38,6 +38,7 @@ L. Theis, I. Korshunova, **A. Tejani**, F. Huszár
 <br />
 <a href="https://arxiv.org/abs/1801.05787">[PDF]</a>
 
+<br />
 C. Ledig, L. Theis, F. Huszár, J. Caballero, A. Cunningham, A. Acosta, A. Aitken, **A. Tejani**, J. Totz, Z. Wang, W. Shi
 <br />
 **Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network**
