@@ -20,12 +20,15 @@ After this I went on to work at a augmented reality and visual search startup ca
 
 ## Present
 
-Currently I work as a Research Engineer for <a href="https://twitter.com">Twitter</a>, focussed on computer vision applications using deep learning. My research interests are currently around using computer vision for lower-level vision tasks such as super resolution and artifact removal, with possible applications to image/video compression and enhancement.
+Currently I work as a Research Engineer for <a href="https://twitter.com">Twitter</a> currently focussed on recommender systems with application towards ranking tweet timelines. Previously my research interests are were around using computer vision for lower-level vision tasks such as super resolution and artifact removal, with possible applications to image/video compression and enhancement.
 <br />
 
 ## Future
 
-...who knows, get in contact with me at alykhan[dot]tejani[at]gmail[dot]com
+...who knows, get in contact with me at alykhan[dot]tejani[at]gmail[dot]com or <a href="https://twitter.com/alykhantejani/">@alykhantejani</a>
+
+## Open Source
+I am a firm believer in the power of open source to accelerate innovation. I am the author of <a href="http://github.com/pytorch/ignite">ignite</a>, maintainer of <a href="http://github.com/pytorch/vision">torchvision</a> and contributor to <a href="http://github.com/pytorch/pytorch">PyTorch</a> (<a href="https://github.com/pytorch/pytorch/commits?author=alykhantejani">commits</a>).
 
 ## Publications
 
@@ -45,7 +48,7 @@ _Proc. of IEEE Conf. on Computer Vision and Pattern Recognition (**CVPR**), 2016
 **Latent-Class Hough Forests for 3D Object Detection and Pose Estimation**
 <br />
 _Proc. of European Conference on Computer Vision (**ECCV**), 2014_.  
-<a href="http://www.iis.ee.ic.ac.uk/icvl/doc/ECCV2014_aly.pdf">[PDF]</a><a href="https://www.youtube.com/watch?v=vuDQzgQraFE">[Demo on YouTube]</a><a href="http://www.iis.ee.ic.ac.uk/rkouskou/research/LCHF.html">[Project Page]</a>
+<a href="https://labicvl.github.io/docs/pubs/Aly_ECCV_2014.pdf">[PDF]</a><a href="https://www.youtube.com/watch?v=dh2VtnnsGuY">[Demo on YouTube]</a><a href="http://rkouskou.gitlab.io/research/LCHF.html">[Project Page]</a>
 
 <br />
 <!--<img align="left" src="{{ site.url }}/images/cvpr14.png" height="120px" width="120px" style="padding-right: 10px">-->
@@ -56,20 +59,20 @@ D. Tang, H.J. Chang\*, **A. Tejani**\*, T-K. Kim
 _Proc. of IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), 2014_.
 <br />
 **\*indicates equal contribution**  
-<a href="http://www.iis.ee.ic.ac.uk/dtang/cvpr_14.pdf">[PDF]</a><a href="http://youtu.be/ZI_XNPI_QXA">[Demo on YouTube]</a>
+<a href="https://labicvl.github.io/docs/pubs/Danny_CVPR_2014.pdf">[PDF]</a><a href="http://youtu.be/ZI_XNPI_QXA">[Demo on YouTube]</a><a href="https://labicvl.github.io/hand.html">[Project Page]</a>
 <br />
 
 ### Journal
 
 <!--<img align="left" src="{{ site.url }}/images/6DOF_pami_img1.png" height="180px" width="120px" style="padding-right: 10px;">-->
-R. Kouskouridas\*, **A. Tejani**\*, A. Doumanoglou, D. Tang, T-K. Kim
+**A. Tejani**\*, R. Kouskouridas\*, A. Doumanoglou, D. Tang, T-K. Kim
 <br />
 **Latent-Class Hough Forests for 6 DoF Object Pose Estimation**
 <br />
-_Trans. on Pattern Analysis and Machine Intelligence (PAMI) (under minor revision)._
+_Trans. on Pattern Analysis and Machine Intelligence (PAMI), 2018._
 <br />
 **\*indicates equal contribution**  
-<a href="http://arxiv.org/abs/1602.01464">\[PDF\](Draft)</a><a href="http://www.iis.ee.ic.ac.uk/rkouskou/research/LCHF.html">[Project Page]</a>
+<a href="pdfs/tpami-LCHF.pdf">\[PDF\]</a><a href="http://www.iis.ee.ic.ac.uk/rkouskou/research/LCHF.html">[Project Page]</a>
 <br />
 <br />
 <!--<img align="left" src="{{ site.url }}/images/LRF_PAMI.png" height="120px" width="120px" style="padding-right: 10px">-->
@@ -77,7 +80,7 @@ D. Tang, H.J. Chang, **A. Tejani**, T-K. Kim
 <br />
 **Latent Regression Forest: Structured Estimation of 3D Hand Poses**
 <br />
-_Trans. on Pattern Analysis and Machine Intelligence (PAMI), accepted to appear 2016_.
+_Trans. on Pattern Analysis and Machine Intelligence (PAMI), 2016._
 <br/>
 <a href="pdfs/LRF_PAMI_DRAFT.pdf">\[PDF\](Draft)</a>
 
