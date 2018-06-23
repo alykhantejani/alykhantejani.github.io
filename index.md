@@ -32,7 +32,11 @@ I am a firm believer in the power of open source to accelerate innovation. I am 
 
 ## Publications
 
-### Conference
+L. Theis, I. Korshunova, **A. Tejani**, F. Huszár
+<br />
+**Faster gaze prediction with dense networks and Fisher pruning**
+<br />
+<a href="https://arxiv.org/abs/1801.05787">[PDF]</a>
 
 C. Ledig, L. Theis, F. Huszár, J. Caballero, A. Cunningham, A. Acosta, A. Aitken, **A. Tejani**, J. Totz, Z. Wang, W. Shi
 <br />
@@ -62,7 +66,7 @@ _Proc. of IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), 2014_.
 <a href="https://labicvl.github.io/docs/pubs/Danny_CVPR_2014.pdf">[PDF]</a><a href="http://youtu.be/ZI_XNPI_QXA">[Demo on YouTube]</a><a href="https://labicvl.github.io/hand.html">[Project Page]</a>
 <br />
 
-### Journal
+### Journal Papers
 
 <!--<img align="left" src="{{ site.url }}/images/6DOF_pami_img1.png" height="180px" width="120px" style="padding-right: 10px;">-->
 **A. Tejani**\*, R. Kouskouridas\*, A. Doumanoglou, D. Tang, T-K. Kim
