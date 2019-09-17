@@ -31,7 +31,22 @@ Currently I work as a Research Engineer for <a href="https://twitter.com">Twitte
 I am a firm believer in the power of open source to accelerate innovation. I am the author of <a href="http://github.com/pytorch/ignite">ignite</a>, maintainer of <a href="http://github.com/pytorch/vision">torchvision</a> and contributor to <a href="http://github.com/pytorch/pytorch">PyTorch</a> (<a href="https://github.com/pytorch/pytorch/commits?author=alykhantejani">commits</a>).
 
 ## Publications
+B. Steiner, Z. DeVito, S. Chintala, S. Gross, A. Paszke, F. Massa, A. Lerer, G. Chanan, Z. Lin, E. Yang, A. Desmaison, **A. Tejani**, A, Kopf, J. Bradbury, L. Antiga, M, Raison, N, Gimlelshein, S. Chilamkurthy, T. Killeen, L. Fang, J. Bai
+<br />
+**PyTorch: An Imperative Style, High-Performance Deep Learning Library**
+_In Advances in Neural Information Processing Systems (**NeurIPS**), 2019_.
+<br />
+<a href="">[PDF]</a>
 
+<br />
+S. I. Ktena, **A. Tejani**, L. Theis, P. K. Myana, D. Dilipkumar, F.Huszar, S. Yoo, W. Shi
+<br />
+**Addressing Delayed Feedback for Continuous Training with Neural Networks in CTR prediction**
+_Proc. of ACM Conf. on Recommender Systems (**RecSys**), 2019_.
+<br />
+<a href="https://arxiv.org/abs/1907.06558">[PDF]</a>
+
+<br />
 L. Theis, I. Korshunova, **A. Tejani**, F. Huszár
 <br />
 **Faster gaze prediction with dense networks and Fisher pruning**
