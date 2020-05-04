@@ -31,12 +31,19 @@ Currently I work as a Research Engineer for <a href="https://twitter.com">Twitte
 I am a firm believer in the power of open source to accelerate innovation. I am the author of <a href="http://github.com/pytorch/ignite">ignite</a>, maintainer of <a href="http://github.com/pytorch/vision">torchvision</a> and contributor to <a href="http://github.com/pytorch/pytorch">PyTorch</a> (<a href="https://github.com/pytorch/pytorch/commits?author=alykhantejani">commits</a>).
 
 ## Publications
+L. Belli, S. I. Ktena, **A. Tejani**, A. Lung-Yut-Fon, F. Portman, X. Zhu, Y. Xie, A. Gupta, M. Bronstein, A. Delić, G. Sottocornola, W. Anelli, N. Andrade, J. Smith, W. Shi
+<br>
+**Privacy-Preserving Recommender Systems Challenge on Twitter's Home Timeline**
+<br />
+<a href="https://arxiv.org/pdf/2004.13715">[PDF]</a><a href="https://recsys-twitter.com" target="blank">[Project Page]</a>
+
+<br />
 B. Steiner, Z. DeVito, S. Chintala, S. Gross, A. Paszke, F. Massa, A. Lerer, G. Chanan, Z. Lin, E. Yang, A. Desmaison, **A. Tejani**, A, Kopf, J. Bradbury, L. Antiga, M, Raison, N, Gimlelshein, S. Chilamkurthy, T. Killeen, L. Fang, J. Bai
 <br />
 **PyTorch: An Imperative Style, High-Performance Deep Learning Library**
 _In Advances in Neural Information Processing Systems (**NeurIPS**), 2019_.
 <br />
-<a href="">[PDF]</a>
+<a href="https://papers.nips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-library.pd://papers.nips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-library.pdf">[PDF]</a>
 
 <br />
 S. I. Ktena, **A. Tejani**, L. Theis, P. K. Myana, D. Dilipkumar, F.Huszar, S. Yoo, W. Shi
