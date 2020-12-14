@@ -31,6 +31,7 @@ Currently I work as a Research Engineer for <a href="https://twitter.com">Twitte
 I am a firm believer in the power of open source to accelerate innovation. I am the author of <a href="http://github.com/pytorch/ignite">ignite</a>, maintainer of <a href="http://github.com/pytorch/vision">torchvision</a> and contributor to <a href="http://github.com/pytorch/pytorch">PyTorch</a> (<a href="https://github.com/pytorch/pytorch/commits?author=alykhantejani">commits</a>).
 
 ## Publications
+
 D. Guo, S. I. Ktena, F. Huszar, P. K. Myana, W. Shi, **A. Tejani**
 <br>
 **Deep Bayesian Bandits: Exploring in Online Personalized Recommendations**
