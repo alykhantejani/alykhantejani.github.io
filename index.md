@@ -31,6 +31,20 @@ Currently I work as a Research Engineer for <a href="https://twitter.com">Twitte
 I am a firm believer in the power of open source to accelerate innovation. I am the author of <a href="http://github.com/pytorch/ignite">ignite</a>, maintainer of <a href="http://github.com/pytorch/vision">torchvision</a> and contributor to <a href="http://github.com/pytorch/pytorch">PyTorch</a> (<a href="https://github.com/pytorch/pytorch/commits?author=alykhantejani">commits</a>).
 
 ## Publications
+D. Guo, S. I. Ktena, F. Huszar, P. K. Myana, W. Shi, **A. Tejani**
+<br>
+**Deep Bayesian Bandits: Exploring in Online Personalized Recommendations **
+<br />
+<a href="https://arxiv.org/abs/2008.00727">[PDF]</a><a href="https://vimeo.com/456552874">[Video]</a>
+
+<br />
+C. Zhang, Y. Liu, Y. Xie, S. I. Ktena, **A. Tejani**, A. Gupta, P. K. Myana, D. Dilipkumar, S. Paul, I. Ihara, P. Upadhyaya, F. Huszar, W. Shi
+<br>
+**Model Size Reduction Using Frequency Based Double Hashing for Recommender Systems**
+<br />
+<a href="https://arxiv.org/abs/2007.14523">[PDF]</a><a href="https://vimeo.com/456552811">[Video]</a>
+
+<br />
 L. Belli, S. I. Ktena, **A. Tejani**, A. Lung-Yut-Fon, F. Portman, X. Zhu, Y. Xie, A. Gupta, M. Bronstein, A. Delić, G. Sottocornola, W. Anelli, N. Andrade, J. Smith, W. Shi
 <br>
 **Privacy-Preserving Recommender Systems Challenge on Twitter's Home Timeline**
