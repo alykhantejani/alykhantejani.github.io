@@ -33,7 +33,7 @@ I am a firm believer in the power of open source to accelerate innovation. I am 
 ## Publications
 D. Guo, S. I. Ktena, F. Huszar, P. K. Myana, W. Shi, **A. Tejani**
 <br>
-**Deep Bayesian Bandits: Exploring in Online Personalized Recommendations **
+**Deep Bayesian Bandits: Exploring in Online Personalized Recommendations**
 <br />
 <a href="https://arxiv.org/abs/2008.00727">[PDF]</a><a href="https://vimeo.com/456552874">[Video]</a>
 
